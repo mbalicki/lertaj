@@ -1,3 +1,4 @@
 ﻿# lertaj
 Repozytorium plików projektu zespołu „Lertaj komputikistoj”, tworzonego w ramach przedmiotu „Metodyki zwinne wytwarzania oprogramowania”.
-Aby uruchomić program pozwalający ruszać paletką należy otworzyć plik „zbudowane.exe” umieszczony w folderze „Unua”.
+
+Grę można włączyć we wbudowanym emulatorze programu „Unity” ładująć projekt będący folderem „Pong”. Można również uruchomić ją na sprzęcie z systemem operacyjnym Android, instalując na nim plik „Pong.apk”.
