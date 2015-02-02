@@ -8,10 +8,11 @@ public class Ball : MonoBehaviour {
 	void Start () {
 		scorea = 0;
 		scoreb = 0;
+		Random.seed = 42;
 		updateScore (scorea, scoreb);
-		x = Random.Range (0, 2) == 0 ? -1 : 1;
-		y = Random.Range (0, 2) == 0 ? -1 : 1;
-		rigidbody.velocity = new Vector3 (Random.Range (5, 10) * x, Random.Range (5, 10) * y, 0);
+		x = Random.Range (0, 2) >= 1 ? -1 : 1;
+		y = Random.Range (0, 2) >= 1 ? -1 : 1;
+		rigidbody.velocity = new Vector3 (Random.Range (10, 15) * x, Random.Range (10, 15) * y, 0);
 	}
 	
 	// Update is called once per frame
@@ -20,16 +21,20 @@ public class Ball : MonoBehaviour {
 			scoreb++;
 			updateScore(scorea,scoreb);
 			
-			transform.position = new Vector3 (0, 1, 0);
-			rigidbody.velocity = new Vector3 (Random.Range (5, 10) * x, Random.Range (5, 10) * y, 0);
+			transform.position = new Vector3 (0, 1, 0);		
+			x = Random.Range (0, 2) >= 1 ? -1 : 1;
+			y = Random.Range (0, 2) >= 1 ? -1 : 1;
+			rigidbody.velocity = new Vector3 (Random.Range (10, 15) * x, Random.Range (10, 15) * y, 0);
 		}
 		if (transform.position.x > 13) {
 
 			scorea++;
 			updateScore(scorea,scoreb);
 
-			transform.position = new Vector3 (0, 1, 0);
-			rigidbody.velocity = new Vector3 (Random.Range (5, 10) * x, Random.Range (5, 10) * y, 0);
+			transform.position = new Vector3 (0, 1, 0);		
+			x = Random.Range (0, 2) >= 1 ? -1 : 1;
+			y = Random.Range (0, 2) >= 1 ? -1 : 1;
+			rigidbody.velocity = new Vector3 (Random.Range (10,15) * x, Random.Range (10, 15) * y, 0);
 		}
 	}
 	void updateScore(int scorea,int scoreb)
