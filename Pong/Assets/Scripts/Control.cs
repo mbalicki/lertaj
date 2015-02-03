@@ -15,9 +15,9 @@ public class Control : MonoBehaviour {
 		if (gameObject.name == "Pallet2")transform.Translate (0, Input.GetAxis ("Vertical") * spd, 0);
 		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved) {
 			// Get movement of the finger since last frame
-			Vector2 touchpos = Input.GetTouch(0).deltaPosition;
-			if(Input.GetTouch(0).position.x < Screen.width * 0.15 && gameObject.name == "Pallet1") transform.Translate(0,touchpos.y*spd/2.0);
-			if(Input.GetTouch(0).position.x > Screen.width * 0.85 && gameObject.name == "Pallet2") transform.Translate(0,touchpos.y*spd/2.0);
+			Vector touchpos = Input.GetTouch(0).deltaPosition;
+			if(Input.GetTouch(0).position.x < 40 && gameObject.name == "Pallet1") transform.Translate(0,-touchpos*spd,0);
+			if(Input.GetTouch(0).position.x > Screen.width - 40 && gameObject.name == "Pallet2") transform.Translate(0,-touchpos*spd,0);
 			// Move object across XY plane
 		}
 	}
