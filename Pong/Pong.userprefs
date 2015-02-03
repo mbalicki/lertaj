@@ -1,10 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Exit.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Control.cs">
     <Files>
-      <File FileName="..\..\Gra\Pong\Assets\Control.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Exit.cs" Line="8" Column="3" />
       <File FileName="Assets\Scripts\ChangeScene.cs" Line="6" Column="2" />
+      <File FileName="Assets\Scripts\Control.cs" Line="25" Column="1" />
+      <File FileName="Assets\Scripts\Ball.cs" Line="27" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
