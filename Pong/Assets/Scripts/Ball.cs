@@ -8,7 +8,7 @@ public class Ball : MonoBehaviour {
 	void Start () {
 		scorea = 0;
 		scoreb = 0;
-		Random.seed = 42;
+		Random.seed = System.Environment.TickCount;
 		updateScore (scorea, scoreb);
 		x = Random.Range (0, 2) >= 1 ? -1 : 1;
 		y = Random.Range (0, 2) >= 1 ? -1 : 1;
