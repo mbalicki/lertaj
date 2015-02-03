@@ -2,7 +2,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Control.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets\Scripts\Exit.cs" Line="8" Column="3" />
+=======
+      <File FileName="Assets\Scripts\Control.cs" Line="16" Column="77" />
+      <File FileName="Assets\Scripts\Exit.cs" Line="10" Column="1" />
+>>>>>>> origin/master
       <File FileName="Assets\Scripts\ChangeScene.cs" Line="6" Column="2" />
       <File FileName="Assets\Scripts\Control.cs" Line="25" Column="1" />
       <File FileName="Assets\Scripts\Ball.cs" Line="27" Column="24" />
