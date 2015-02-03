@@ -13,11 +13,14 @@ public class Control : MonoBehaviour {
 		float spd = 0.2f;
 		if(gameObject.name=="Pallet1")transform.Translate (0,Input.GetAxis("Horizontal") * spd,0);
 		if (gameObject.name == "Pallet2")transform.Translate (0, Input.GetAxis ("Vertical") * spd, 0);
-		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved) {
+		for(int i=0;i<Input.touchCount;++i)
+		{
+			if(Input.GetTouch(i).phase == TouchPhase.Moved) {
 			// Get movement of the finger since last frame
-			Vector2 touchpos = Input.GetTouch(0).deltaPosition;
-			if(Input.GetTouch(0).position.x < Screen.width * 0.15 && gameObject.name == "Pallet1") transform.Translate(0,touchpos.y*spd/2.0f,0);
-			if(Input.GetTouch(0).position.x > Screen.width * 0.85 && gameObject.name == "Pallet2") transform.Translate(0,touchpos.y*spd/2.0f,0);
+			Vector2 touchpos = Input.GetTouch(i).deltaPosition;
+			if(Input.GetTouch(i).position.x < Screen.width * 0.15 && gameObject.name == "Pallet1") transform.Translate(0,touchpos.y*spd/2.0f,0);
+			if(Input.GetTouch(i).position.x > Screen.width * 0.85 && gameObject.name == "Pallet2") transform.Translate(0,touchpos.y*spd/2.0f,0);
+			}
 		}
 	}
 }
