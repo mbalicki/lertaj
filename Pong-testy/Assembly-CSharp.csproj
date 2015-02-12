@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\SetRotation.cs" />
      <Compile Include="Assets\Scripts\SetSpeed.cs" />
+     <Compile Include="Assets\TestScripts\TestBall.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionException.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\Assertions.cs" />
