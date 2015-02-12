@@ -1,11 +1,21 @@
 ﻿using System;
 using NUnit.Framework;
 
+[TestFixture]
 public class PongTests
 {
 	[Test]
-	public void Przykladowe()
+	public void BallTest()
 	{
-		Assert.That(2 + 2 == 4);
+		Ball pilko = new Ball();
+		Assert.That(true);
 	}
 }
+
+/*
+	[Test]
+	public void Test()
+	{
+
+	}
+*/
