@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\Pong\Assets\Scripts\Ball.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Editor\PongTests.cs">
     <Files>
-      <File FileName="..\Pong\Assets\Scripts\Ball.cs" Line="112" Column="1" />
+      <File FileName="Assets\Editor\PongTests.cs" Line="168" Column="31" />
+      <File FileName="..\Pong\Assets\Scripts\Ball.cs" Line="29" Column="3" />
+      <File FileName="Assets\TestScripts\TestBall.cs" Line="30" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

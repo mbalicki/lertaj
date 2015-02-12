@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class Ball : MonoBehaviour
 {
 	public int min_speed, max_speed;
-	int scorea, scoreb;
-	float x, y;
+	public int scorea, scoreb;
+	public float x, y;
 	
 	void SetScore(int newa, int newb)
 	{
@@ -14,7 +14,7 @@ public class Ball : MonoBehaviour
 		scoreb = newb;
 	}
 	
-	void DisplayScore()
+	public void DisplayScore()
 	{
 		GameObject obiekt;
 		Text tekst;
@@ -28,42 +28,42 @@ public class Ball : MonoBehaviour
 		tekst.text = scoreb.ToString();
 	}
 	
-	void UpPlayerA()
+	public void UpPlayerA()
 	{
 		SetScore(scorea + 1, scoreb);
 		DisplayScore();
 	}
 	
-	void UpPlayerB()
+	public void UpPlayerB()
 	{
 		SetScore(scorea, scoreb + 1);
 		DisplayScore();
 	}
 	
-	void SetRandomDirection()
+	public void SetRandomDirection()
 	{
-		x = Random.Range (0, 2) >= 1 ? -1 : 1;
-		y = Random.Range (0, 2) >= 1 ? -1 : 1;
+		x = Random.Range(0, 2) >= 1 ? -1 : 1;
+		y = Random.Range(0, 2) >= 1 ? -1 : 1;
 	}
 	
-	int ReadMinSpeed()
+	public int ReadMinSpeed()
 	{
 		return (int)(PlayerPrefs.GetFloat("Speed_lvl"));
 	}
 	
-	float GetRandomSpeed()
+	public float GetRandomSpeed()
 	{
 		return (Random.Range((int)min_speed, (int)max_speed));
 	}
 	
-	void SetRandomVelocity()
+	public void SetRandomVelocity()
 	{
 		rigidbody.velocity = new Vector3(GetRandomSpeed() * x,
 		                                 GetRandomSpeed() * y,
 		                                 0);
 	}
 	
-	void Start()
+	public void Start()
 	{
 		SetScore(0, 0);
 		DisplayScore();
@@ -77,27 +77,27 @@ public class Ball : MonoBehaviour
 		SetRandomVelocity();
 	}
 	
-	bool WonPlayerA()
+	public bool WonPlayerA()
 	{
 		return (transform.position.x > 13);
 	}
 	
-	bool WonPlayerB()
+	public bool WonPlayerB()
 	{
 		return (transform.position.x < -13);
 	}
 	
-	bool Outside()
+	public bool Outside()
 	{
 		return (WonPlayerA() || WonPlayerB());
 	}
 	
-	void ReturnToCentre()
+	public void ReturnToCentre()
 	{
 		transform.position = new Vector3(0, 1, 0);
 	}
 	
-	void Update()
+	public void Update()
 	{
 		if (Outside())
 		{
