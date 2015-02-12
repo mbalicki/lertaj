@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{7D1FD04F-339F-994F-A1F7-3E0631DA1FE1}</ProjectGuid>
+	<ProjectGuid>{35692543-12A4-2F2A-15B9-A972B3377F14}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -113,7 +113,7 @@
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\SuperSimpleSelfIllumination.shader" />
      <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\ParticleBlend.shader" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong-testy/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
@@ -122,22 +122,22 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="NSubstitute">
- <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong/Assets/UnityTestTools/UnitTesting/Editor/NSubstitute/NSubstitute.dll</HintPath>
+ <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong-testy/Assets/UnityTestTools/UnitTesting/Editor/NSubstitute/NSubstitute.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
- <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong/Assets/UnityTestTools/UnitTesting/Editor/NUnit/Libs/Mono.Cecil.dll</HintPath>
+ <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong-testy/Assets/UnityTestTools/UnitTesting/Editor/NUnit/Libs/Mono.Cecil.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil.Mdb">
- <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong/Assets/UnityTestTools/UnitTesting/Editor/NUnit/Libs/Mono.Cecil.Mdb.dll</HintPath>
+ <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong-testy/Assets/UnityTestTools/UnitTesting/Editor/NUnit/Libs/Mono.Cecil.Mdb.dll</HintPath>
  </Reference>
  <Reference Include="nunit.core">
- <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong/Assets/UnityTestTools/UnitTesting/Editor/NUnit/Libs/nunit.core.dll</HintPath>
+ <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong-testy/Assets/UnityTestTools/UnitTesting/Editor/NUnit/Libs/nunit.core.dll</HintPath>
  </Reference>
  <Reference Include="nunit.core.interfaces">
- <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong/Assets/UnityTestTools/UnitTesting/Editor/NUnit/Libs/nunit.core.interfaces.dll</HintPath>
+ <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong-testy/Assets/UnityTestTools/UnitTesting/Editor/NUnit/Libs/nunit.core.interfaces.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong/Assets/UnityTestTools/UnitTesting/Editor/NUnit/Libs/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/Michał/Documents/GitHub/lertaj/Pong-testy/Assets/UnityTestTools/UnitTesting/Editor/NUnit/Libs/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -145,7 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{59972000-A102-93F3-E252-4AFE00D882C8}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+      <Project>{4285D483-A3B2-212E-CED2-8F4A083C6394}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
